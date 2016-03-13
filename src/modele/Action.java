@@ -14,7 +14,11 @@ public class Action {
   private int action; /* L'action: une des valeurs ci-dessus */
   private int pos;    /* La position concernée */
   
+  private final int NO_POS = -1;
+  
   public Action (int action, int pos) {this.action = action; this.pos = pos;}
+  
+  public Action(int action) {this(action, NO_POS);}
   
   public int getAction () {return action;}
   public int getPos () {return pos;}
